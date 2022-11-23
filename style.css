@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+  margin-left: 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #777;
+}
+.container .toggle {
+  height: 70px;
+  width: 70px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container .toggle div {
+  height: 10px;
+  width: 60px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 20px;
+}
+.container .toggle div:not(:first-child) {
+  margin-top: 10px;
+}
+.container .toggle:hover div {
+  background-color: rgb(241, 86, 86);
+}
+.container .toggle:hover #one {
+  position: absolute;
+  transform: rotate(135deg);
+  top: 30px;
+  transition: 0.3s;
+}
+.container .toggle:hover #two {
+  display: none;
+}
+.container .toggle:hover #three {
+  position: absolute;
+  transform: rotate(-135deg);
+  top: 20px;
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */
